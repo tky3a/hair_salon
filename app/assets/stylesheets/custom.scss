@@ -4,3 +4,38 @@
 h1  {
   color: black;
 }
+
+body {
+  position: hidden;
+}
+
+//ヘッダー・ロゴ・
+.header {
+  border-bottom: solid 1px;
+  .container {
+    text-align: center;
+    #logo {
+      font-family: 'Vidaloka', serif;
+      font-weight:normal;
+      color:#444;
+      }
+    }
+  }
+  .main-title {
+    display:block;
+    font-size: 72px;
+    line-height:72px;
+  }
+
+.contents-background{
+  height: 580px;
+  margin-top: 113px; //縦マージンを修正
+  background: image-url('hair_saron04.jpg'); //画像をバックグランドに表示
+  background-repeat: no-repeat; //リピートなし
+  background-size: cover; //要素いっぱいに表示
+  background-position: center;
+  }
+
+.content-area02 {
+  margin-top: 600px;
+}
