@@ -10,6 +10,8 @@ gem 'jquery-rails', '4.3.1'
 gem 'pry-rails'
 gem 'pry-byebug'
 gem 'bootstrap-sass'
+gem 'bootstrap', '~> 4.1.1'
+gem 'popper_js'
 
 gem 'rails', '~> 5.1.6'
 gem 'mysql2', '>= 0.3.18', '< 0.6.0'

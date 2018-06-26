@@ -6,21 +6,61 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   </head>
 
   <body>
-      <%= render 'layouts/header' %>
-      <div class="contents-background">
-        <div class="container">
-          <div class="content-area01">
-            <h1>画像を表示させる</h1>
-          </div>
-          <div class="content-area02">
-            <h2>CONCEPT</h2>
-          </div>
+    <%= render 'layouts/header' %>
+    <%= render 'layouts/top'%>
+    <%= render 'layouts/concept'%>
+    <%= render 'layouts/information' %>
 
+    <div class="salon_price">
+      <div class="container-fluid">
+        <div class="contents-area04">
+          <h1>SALON / PRICE</h1>
+          <div class="picture">
+            <%= image_tag('hair_salon04') %>
+            <%= image_tag('hair_salon05') %>
+            <%= image_tag('hair_salon06') %>
+          </div>
+          <div class="text-contents">
+            <h2>○○店</h2>
+            <p>address: XXXX</p>
+            <p>hours: XXXX</p>
+            <p>phone: XXXX</p>
+            <p>holiday: XXXX</p>
+          </div>
+          <div class="text-contents">
+            <h2>○○店</h2>
+            <p>address: XXXX</p>
+            <p>hours: XXXX</p>
+            <p>phone: XXXX</p>
+            <p>holiday: XXXX</p>
+          </div>
+          <div class="text-contents">
+            <h2>○○店</h2>
+            <p>address: XXXX</p>
+            <p>hours: XXXX</p>
+            <p>phone: XXXX</p>
+            <p>holiday: XXXX</p>
+          </div>
+          <div class="text-contents-btn">
+            <h2 class="btn btn-default">SALON/PRICE</h2><br>
+            <h2 class="btn btn-default">予約確認</h2>
+          </div>
+          <div class="text-contents-btn">
+            <h2 class="btn btn-default">SALON/PRICE</h2><br>
+            <h2 class="btn btn-default">予約確認</h2>
+          </div>
+          <div class="text-contents-btn">
+            <h2 class="btn btn-default">SALON/PRICE</h2><br>
+            <h2 class="btn btn-default">予約確認</h2>
+          </div>
         </div>
       </div>
+    </div>
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
