@@ -10,7 +10,15 @@
       <%= link_to "STYLE" %>
       <%= link_to "STAFF" %>
       <div class="user-nav">
-        <%= link_to "login", "#"%>
+        <% if user_signed_in? %>
+<strong><%= link_to current_user.username, current_user %></strong>
+<%= link_to "プロフィール", edit_user_registration_path %>
+<%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+<!--ログインしていない場合-->
+<% else %>
+<%= link_to "Login", new_user_session_path %>
+<%= link_to 'sign up', new_user_registration_path %>
+<% end %>
       </div>
     </div>
   </div>
